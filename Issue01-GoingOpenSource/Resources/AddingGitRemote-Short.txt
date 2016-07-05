@@ -1,0 +1,20 @@
+
+$ git remote add other path/to/new/repository.git
+$ git push other master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: error: refusing to update checked out branch: refs/heads/master
+...
+remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+To path/to/new/repository.git
+ ! [remote rejected] master -> master (branch is currently checked out)
+error: failed to push some refs to 'path/to/new/repository.git'
+$ cd path/to/new/repository.git
+$ git checkout -b develop
+$ git push other master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To path/to/new/repository.git
+ * [new branch]      master -> master

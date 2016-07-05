@@ -1,0 +1,82 @@
+Nikolas-MBP:~ Nikola$ cd ~/Projects/Examples/
+Nikolas-MBP:Examples Nikola$ mkdir GitRemotesTest
+Nikolas-MBP:Examples Nikola$ cd GitRemotesTest/
+Nikolas-MBP:GitRemotesTest Nikola$ mkdir repo1
+Nikolas-MBP:GitRemotesTest Nikola$ git init repo1/repo.git
+Initialized empty Git repository in repo1/repo.git/.git/
+Nikolas-MBP:GitRemotesTest Nikola$ cd repo1/repo.git/
+Nikolas-MBP:repo.git Nikola$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+Nikolas-MBP:GitRemotesTest Nikola$ touch source.txt
+Nikolas-MBP:GitRemotesTest Nikola$ vim source.txt 
+Nikolas-MBP:repo.git Nikola$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	source.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Nikolas-MBP:repo.git Nikola$ git add source.txt 
+Nikolas-MBP:repo.git Nikola$ git commit -m "Super Important commit"
+[master (root-commit) 60b183f] Super Important commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 source.txt
+Nikolas-MBP:repo.git Nikola$ cd ../..
+Nikolas-MBP:GitRemotesTest Nikola$ mkdir repo2
+Nikolas-MBP:GitRemotesTest Nikola$ git init repo2/repo.git
+Nikolas-MBP:GitRemotesTest Nikola$ cd repo1/repo.git/
+Nikolas-MBP:repo.git Nikola$ git remote add other ~/Projects/Examples/GitRemotesTest/repo2/repo.git
+Nikolas-MBP:repo.git Nikola$ git push other master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: error: refusing to update checked out branch: refs/heads/master
+remote: error: By default, updating the current branch in a non-bare repository
+remote: error: is denied, because it will make the index and work tree inconsistent
+remote: error: with what you pushed, and will require 'git reset --hard' to match
+remote: error: the work tree to HEAD.
+remote: error: 
+remote: error: You can set 'receive.denyCurrentBranch' configuration variable to
+remote: error: 'ignore' or 'warn' in the remote repository to allow pushing into
+remote: error: its current branch; however, this is not recommended unless you
+remote: error: arranged to update its work tree to match what you pushed in some
+remote: error: other way.
+remote: error: 
+remote: error: To squelch this message and still keep the default behaviour, set
+remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+To /Users/Nikola/Projects/Examples/GitRemotesTest/repo2/repo.git
+ ! [remote rejected] master -> master (branch is currently checked out)
+error: failed to push some refs to '/Users/Nikola/Projects/Examples/GitRemotesTest/repo2/repo.git'
+Nikolas-MBP:repo.git Nikola$ cd ../../repo2/repo.git/
+Nikolas-MBP:repo.git Nikola$ git checkout -b develop
+Switched to a new branch 'develop'
+Nikolas-MBP:repo.git Nikola$ git st
+On branch develop
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+Nikolas-MBP:repo.git Nikola$ cd ../../repo1/repo.git/
+Nikolas-MBP:repo.git Nikola$ git push other master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To /Users/Nikola/Projects/Examples/GitRemotesTest/repo2/repo.git
+ * [new branch]      master -> master
+Nikolas-MBP:repo.git Nikola$ cd ../../repo2/repo.git/
+Nikolas-MBP:repo.git Nikola$ git checkout master
+Switched to branch 'master'
+Nikolas-MBP:repo.git Nikola$ git log
+commit 60b183f7c6b8c5f530ae75382dbce94fbca1f101
+Author: Nikola Sobadjiev <nikola@devmonologue.com>
+Date:   Tue Jun 14 21:12:54 2016 +0200
+
+    Super Important commit
