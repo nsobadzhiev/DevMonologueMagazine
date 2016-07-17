@@ -2,7 +2,7 @@
 
 This article is about the different available open source licenses and how to choose the one you're comfortable with.
 
-### Licenses
+### Licensing
 
 As a developer, trying to give something back to the community, the first encounter with open source licenses can be overwhelming. There seems to be an endless selection to choose from and it can sometimes be difficult to distinguish between options. Of course, you can alway make your own license, but I'm going to assume most people don't have the expertise and/or the desire to do so. Leave it to corporations.
 
@@ -25,7 +25,7 @@ Here's the list at the time of writing:
 * Common Development and Distribution License
 * Eclipse Public License
 
-What you might find strange here is that you can see company names. As mentioned, you are free to create your own terms, if you have the money and expertise to do that (you also need to be approved by OSI of you want to appear in this list). So some big companies, like Mozilla in this case, do that, but for most people choosing an existing one is fine.
+What you might find strange here is that you can see company names. As mentioned, you are free to create your own terms, if you have the money and expertise to do that. So some big companies, like Mozilla in this case, do that, but for most people choosing an existing one is fine.
 
 ### Choosing a license
 
@@ -33,7 +33,7 @@ If you read around the OSI website a little bit, and open the page for some of t
 
 When choosing a license, there are mostly several things to think about.
 
-First, and definitely most important, are the rules for using the code (and any documentation, configurations files and whatever else you have there). What are the rules, other developers need to obay, if they want to use your hard work. Surely, since you open sourced your code, you welcome people to enjoy it, but still you need to decide how open you want to be about this. For instance, the MIT license, which is a popular choice for "liberal" developers, permits almost every kind of usage scenario. The only thing you cannot do, is claim the code is actually yours (what about license file????). On the other hand, the GNU General Public License allows you to use and change the source, but only if you, in turn share your code and any changes you might have made. So basically this limits the projects appeal for commercial products. It is a fairly popular choice in the Linux world, where people promote free and open software.
+First, and definitely most important, are the rules for using the code (and any documentation, configurations files and whatever else you have there). What are the rules, other developers need to obey, if they want to use your hard work. Surely, since you open sourced your code, you welcome people to enjoy it, but still you need to decide how open you want to be about this. For instance, the MIT license, which is a popular choice for "liberal" developers, permits almost every kind of usage scenario. The only thing you cannot do, is claim the code is actually yours. On the other hand, the GNU General Public License allows you to use and change the source, but only if you, in turn share your code and any changes you might have made. So basically this limits the projects appeal for commercial products. It is a fairly popular choice in the Linux world, where people promote free and open software.
 
 Most of the other text within a open source software license is about liability and contribution. Here, there is less to choose since most options are relatively the same. They tend to disclaim any sort of liability obligations. And for good reason. You were happy to share your work with the world, but do you really want to be held responsible for problems that might arise in other people's projects? Probaby not. So OSI comes to the rescues and makes sure you don't run into those kinds of problems.
 
@@ -41,7 +41,7 @@ Another liability topic, licenses handle in a similar way, are contributions. If
 
 _Something cool I found in some licenses (The Apache), is section 9 called "Accepting Warranty or Additional Liability". It allows you to bring support and consulting to your business model for open source projects. This is something that many companies like Canonical and RedHat already do. It means that whereas the code is free, not providing any type or warrenty, and might actually not allow you to used in commercial project (not the case with Apache), you can still charge money in exchange for support and accepting warrenty._
 
-So the elephant in the room of choosing a license is actually what we discussed in the first paragraph - do you want people to start using your code for profit. It's to some degree a philosophical question, but also your decision might change from project to project. What I'm seeing in other people, and it also happens to be my personal opinion, is that for small projects and pieces of code, you should choose a more "liberal" lisense. The MIT license for instance, is a great choice in that matter. The truth is, if your project is just a few files of code, who cares if it's used by an evil corporation. And even if you protect it with a strict license, like GPL (General Public License), the code base is so small, a developer can re-write it base on your ideas and solutions. For bigger projects, however, let's say for frameworks and whole applications, you might have to weigh in your options more carefully. If you're building this product just for fun, think about it in a "political" way. Do you accept that people might be profiting using your work, without giving anything back? Are you a strong supporter of opne source? And if you're trying to run a business with that code base, can other companies levarage that in order to gain a competitive advantage over you? Can they use your code, extend it a little without in turn sharing their modifications, to take the upperhand? If so, then a more permissive lisense might not be a good choice for you.
+So the elephant in the room of choosing a license is actually what we discussed in the first paragraph - do you want people to start using your code for profit. It's to some degree a philosophical question, but also your decision might change from project to project. What I'm seeing in other people, and it also happens to be my personal opinion, is that for small projects and pieces of code, you should choose a more "liberal" lisense. The MIT license for instance, is a great choice in that matter. The truth is, if your project is just a few files of code, who cares if it's used by an evil corporation. And even if you protect it with a strict license, like GPL (General Public License), the code base is so small, a developer can re-write it base on your ideas and solutions. For bigger projects, however, let's say for frameworks and whole applications, you might have to weigh in your options more carefully. If you're building this product just for fun, think about it in a "political" way. Do you accept that people might be profiting using your work, without giving anything back? Are you a strong supporter of open source? And if you're trying to run a business with that code base, can other companies levarage that in order to gain a competitive advantage over you? Can they use your code, extend it a little without in turn sharing their modifications, to take the upperhand? If so, then a more permissive lisense might not be a good choice for you.
 
 Anyway, based on how liberal they are towards commercial use, the popular lisences you can see on OSI's website, can be divided in two:
 
@@ -64,7 +64,7 @@ Anyway, based on how liberal they are towards commercial use, the popular lisenc
 
 ------
 
-Digging deeper, beyond distribution term, most licenses seem similar to the common programmer. I encourage you to read those licenses to see how they differ, but generally, after you choose between those two sections above, you're almost ready. 
+Digging deeper, beyond distribution terms, most licenses seem similar to the common programmer. I encourage you to read those licenses to see how they differ, but generally, after you choose between those two sections above, you're almost ready. 
 
 But before we move on to "Applying the license", there are several interesting topics many licenses address. One of them, that addresses the so called "privacy loophole", makes sure cloud services cannot bypass their responsibility towards your code. Since many options are fairly old (GPL v1 for instance was created in 1989), they don't address hosted services. Many companies go around strict licenses by saying that they don't distribute the protected source code - they just deploy it once internally, and then provide it to users as a SaaS (Software as a Service). Since this is not exactly fair and sometimes unacceptable for the authors, several licenses address that issue, namely:
 * Affero GNU Public License
@@ -81,7 +81,7 @@ Another interesting topic is the way third parties should acknowledge their use 
 * Reciprocal Public License 1.5
 
 Finally, a consideration that I wish anyone of us had, is the **no promotion** feature. It protects authors from being used as advertisement for a product. It forbids 
-third parties to use the author's name to promote their business. Again... I wish I had that kind of problem :)
+third parties to use the author's name to promote their business.
 
 What you go for is largely a matter of choice. For instance, if I wanted to just share some code with other people, I'd use MIT or BSD, since they are so simple and short.
 
@@ -116,8 +116,6 @@ Also, if you look into any of the license pages at [OSI][OSI link], you will see
    limitations under the License.
 
 I guess at some point GitHub (the popular hosted repository website) realized as a major problem that developers didn't know to apply a license to their code and added a license selection step to their "new project" wizard.
-
-![Image of GitHub's new project wizard showing license options](fewf)
 
 To summarize, the only thing you need to do in oder to apply a license to your project is to add that text somewhere in your code. Most of the time, it means adding a LICENSE.txt file to your project and maybe add a comment to the begining of your source code files. For the actual text, refer to your license of choice's webpage.
 
