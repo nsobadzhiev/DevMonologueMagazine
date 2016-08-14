@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://apple.com/itunes/importer/publication" version="publication5.0">
+    <provider>NikolaSobadjiev</provider>
+    <book>
+        <vendor_id>10080730876</vendor_id>
+        <metadata>
+            <publication_type>book</publication_type>
+            <series_info>
+                <series>
+                    <title>DevMonologue Magazine</title>
+                    <sequence_number>1</sequence_number>
+                </series>
+            </series_info>
+            <title>DevMonologue Magazine Issue 01</title>
+            <subtitle>Going Open Source</subtitle>
+            <contributors>
+                <contributor>
+                    <primary>true</primary>
+                    <name>Nikola Sobadjiev</name>
+                    <sort_name>Sobadjiev, Nikola</sort_name>
+                    <roles>
+                        <role>author</role>
+                    </roles>
+                </contributor>
+            </contributors>
+            <languages>
+                <language type="main">eng</language>
+            </languages>
+            <number_of_pages>22</number_of_pages>
+            <subjects>
+                <subject primary="true" scheme="bisac">COM060090</subject>
+            </subjects>
+            <description format="html">DevMonologue Magazine is a series on mini publications geared towards iOS development and software engineering in general. Each issue contains a small number of articles all revolving around the same topic.&lt;br&gt;
+&lt;br&gt;
+In the first issue of the magazine, we are going to discuss Open Source software. After a brief introduction to the free software philosophy, we will continue with some popular iOS and Max OS projects, licensing and releasing source code to the public.&lt;br&gt;
+&lt;br&gt;
+Contents:&lt;br&gt;
+- Editorial&lt;br&gt;
+- Open source licenses&lt;br&gt;
+- iOS/Mac open source world&lt;br&gt;
+- How to convert to open source&lt;br&gt;
+- Epilogue</description>
+            <publisher>Nikola Sobadjiev</publisher>
+            <preorder_previews>true</preorder_previews>
+            <publication_date>2016-07-10</publication_date>
+            <audience_info>
+                <audience scheme="interest-age-years">
+                    <range>
+                        <min_value>12</min_value>
+                    </range>
+                </audience>
+            </audience_info>
+        </metadata>
+        <assets>
+            <asset type="full">
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource.ibooks</file_name>
+                    <size>1730502</size>
+                    <checksum type="md5">f106be123a8c15521ad93564ea5d45f1</checksum>
+                </data_file>
+            </asset>
+            <asset type="preview">
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource-Sample.ibooks</file_name>
+                    <size>669189</size>
+                    <checksum type="md5">1778ecfcbf5881dc948d7e6d87f2ff7a</checksum>
+                </data_file>
+            </asset>
+            <asset type="artwork">
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource-Screenshot1.png</file_name>
+                    <size>213319</size>
+                    <checksum type="md5">0299389abd6cae7a63596ce0ec4a3ac1</checksum>
+                </data_file>
+            </asset>
+            <asset type="ipad_screenshot">
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource-Screenshot4.png</file_name>
+                    <size>1359523</size>
+                    <checksum type="md5">07c3bb9223cf688ce8ae27d0ba377616</checksum>
+                </data_file>
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource-Screenshot2.png</file_name>
+                    <size>980667</size>
+                    <checksum type="md5">6e1aa26a73366d93174c532e96d55409</checksum>
+                </data_file>
+                <data_file>
+                    <file_name>Issue01-GoingOpenSource-Screenshot3.png</file_name>
+                    <size>1468700</size>
+                    <checksum type="md5">986d2f26c8f42afba964a8564ee0d6f0</checksum>
+                </data_file>
+            </asset>
+        </assets>
+    </book>
+</package>
