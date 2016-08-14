@@ -10,7 +10,9 @@ DevMonologue is an open source magazine, released under a Creative Commons licen
 
 Whereas the raw text is hosted here, the issues are going to be released in a PDF or EPUB format alongside formatting and additional graphics. Also, all articles will be uploaded as posts to the [DevMonologue blog][blog link].
 
-To download the final version of the formatted magazine, go here (TODO: no link yet #YOLO).
+To download the final version of the formatted magazine, [go here][github release].
+DevMonologue Magazine is also available in iBooks for free:
+* [Issue 01 - Going Open Source][ibooks link]
 
 ## Contribution guide
 
@@ -27,3 +29,5 @@ The magazine can always use more authors in order to bring more, high quality ma
 By casual contributions, we generally mean "bug" fixes like typos and inconsistancies. To do that, just fork this repository and file a pull request - it is the Git way.
 
 [blog link]: http://devmonologue.com/ios/
+[github release]: https://github.com/nsobadzhiev/DevMonologueMagazine/releases/tag/1.0
+[ibooks link]: https://itunes.apple.com/us/book/devmonologue-magazine-issue/id1143816694?ls=1&mt=11
