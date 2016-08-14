@@ -11,7 +11,9 @@ DevMonologue is an open source magazine, released under a Creative Commons licen
 Whereas the raw text is hosted here, the issues are going to be released in a PDF or EPUB format alongside formatting and additional graphics. Also, all articles will be uploaded as posts to the [DevMonologue blog][blog link].
 
 To download the final version of the formatted magazine, [go here][github release].
+
 DevMonologue Magazine is also available in iBooks for free:
+
 * [Issue 01 - Going Open Source][ibooks link]
 
 ## Contribution guide
